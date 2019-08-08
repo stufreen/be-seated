@@ -12,3 +12,5 @@ fields:
   label: Date
   config:
     required: true
+pages:
+- site/content/blog/third-post.md
