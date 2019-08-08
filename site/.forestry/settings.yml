@@ -21,14 +21,13 @@ build:
   preview_env:
   - HUGO_ENV=staging
   - HUGO_VERSION=0.56.3
-  - PORT=8080
   publish_env:
   - HUGO_ENV=production
   - HUGO_VERSION=0.56.3
-  preview_output_directory: public
+  preview_output_directory: dist
   output_directory: public
   instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
-    -d public
+    -d dist
   install_dependencies_command: npm install
   preview_docker_image: forestryio/hugo:node10
   mount_path: "/srv"
