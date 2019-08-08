@@ -6,8 +6,6 @@ draft: true
 ---
 # Be Seated
 
-![](/uploads/1_u6OpGmaVlB8SHWz3c1MD3g.png)
-
 This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline. Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling. This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 
 ## Enjoy!! 😸
