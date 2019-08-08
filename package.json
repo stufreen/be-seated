@@ -18,6 +18,7 @@
     "build:hugo": "hugo -d ../dist -s site -v",
     "build:hugo:preview": "npm run build:hugo -- -D -F",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
+    "watch:webpack": "webpack --watch --config webpack.dev.js",
     "watch:hugo": "hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d ../dist -s site -vw",
     "forestry": "npm run build:webpack && npm run watch:hugo"
   },
