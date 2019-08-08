@@ -21,6 +21,7 @@ build:
   preview_env:
   - HUGO_ENV=staging
   - HUGO_VERSION=0.56.3
+  - PORT=8080
   publish_env:
   - HUGO_ENV=production
   - HUGO_VERSION=0.56.3
