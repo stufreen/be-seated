@@ -9,4 +9,3 @@ seo_description: Ottawa's finest wicker and cane furniture repairs and supplies.
 social_image: ''
 
 ---
-Blah blah blah
