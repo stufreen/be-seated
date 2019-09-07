@@ -21,5 +21,10 @@ fields:
   config:
     maxSize: 250
   label: Home image
+- name: meta
+  type: include
+  config: {}
+  template: meta
+  label: Meta
 pages:
 - site/content/about.md
