@@ -17,3 +17,4 @@ item_image = "/uploads/RH-2T-1.jpg"
 item_name = "Rawhide"
 
 +++
+This will be the blurb that appears inside the shop supplies section.
