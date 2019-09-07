@@ -13,4 +13,5 @@ fields:
   config:
     required: true
 pages:
+- site/content/supplies.md
 - site/content/blog/third-post.md
