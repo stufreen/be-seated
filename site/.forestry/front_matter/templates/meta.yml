@@ -1,4 +1,23 @@
 ---
 label: Meta
 hide_body: true
-fields: []
+fields:
+- name: page_title
+  type: text
+  config:
+    required: false
+  label: Page title
+- name: seo_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: SEO description
+- name: social_image
+  type: file
+  config:
+    maxSize: 250
+  label: Social image
