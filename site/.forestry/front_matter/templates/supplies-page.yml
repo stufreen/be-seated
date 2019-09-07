@@ -1,4 +1,27 @@
 ---
 label: Supplies page
 hide_body: false
-fields: []
+fields:
+- name: page
+  type: include
+  config: {}
+  template: repair
+  label: Page
+- name: home_items
+  type: field_group_list
+  fields:
+  - name: item_name
+    type: text
+    config:
+      required: false
+    label: Item name
+  - name: item_image
+    type: file
+    config:
+      maxSize: 250
+    label: Item image
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Home items
