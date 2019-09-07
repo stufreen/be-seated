@@ -12,3 +12,8 @@ fields:
   config:
     maxSize: 250
   label: Hero image
+- name: meta
+  type: include
+  config: {}
+  template: meta
+  label: Meta
