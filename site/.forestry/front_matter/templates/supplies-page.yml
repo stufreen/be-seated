@@ -25,3 +25,5 @@ fields:
     max: 
     labelField: 
   label: Home items
+pages:
+- site/content/supplies.md
