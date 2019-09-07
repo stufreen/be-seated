@@ -6,6 +6,7 @@ seo_description = "Be Seated offers a great selection of supplies including cane
 social_image = ""
 summary = "Be Seated offers a great selection of supplies including cane, rush seat, splint seat, reed seat, danish cord seat, seagrass seat, rawhide and basket weaving."
 title = "Supplies"
+layout = "supplies"
 [[home_items]]
 item_image = "/uploads/S-DSCSPL-2-1.jpg"
 item_name = "Danish cord"
