@@ -21,3 +21,5 @@ fields:
   config:
     maxSize: 250
   label: Home image
+pages:
+- site/content/about.md
