@@ -1,4 +1,23 @@
 ---
-label: Repair
-hide_body: true
-fields: []
+label: Page
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: summary
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Summary
+- name: home_image
+  type: file
+  config:
+    maxSize: 250
+  label: Home image
