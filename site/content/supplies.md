@@ -1,4 +1,4 @@
----
++++
 date = "2019-09-07T04:00:00+00:00"
 home_image = ""
 page_title = "Be Seated - Shop supplies"
@@ -16,5 +16,5 @@ item_name = "Rush seat"
 item_image = "/uploads/RH-2T-1.jpg"
 item_name = "Rawhide"
 
----
++++
 This will be the blurb that appears inside the shop supplies section.
