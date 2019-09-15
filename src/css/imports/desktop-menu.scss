@@ -1,0 +1,29 @@
+.bs_desktopMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: $spacing_loose;
+  z-index: 1;
+
+  &.scrolled {
+    background: white;
+  }
+}
+
+.bs_desktopMenu_list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.bs_desktopMenu_item {
+  padding: 0;
+  margin: 0;
+  margin-right: 2em;
+  list-style: none;
+}
+
+.bs_desktopMenu_link {
+  color: black;
+}

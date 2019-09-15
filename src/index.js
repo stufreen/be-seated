@@ -1,6 +1,7 @@
-// JS Goes here - ES6 supported
+import {Application} from "stimulus";
+import {definitionsFromContext} from "stimulus/webpack-helpers";
+import "./css/main.scss";
 
-import "./css/main.css";
-
-// Say hello
-console.log("🦊 Hello! Edit me in src/index.js");
+const application = Application.start();
+const context = require.context("./controllers", true, /\.js$/);
+application.load(definitionsFromContext(context));
