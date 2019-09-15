@@ -27,5 +27,3 @@ fields:
   config: {}
   template: meta
   label: Meta
-pages:
-- site/content/about.md
