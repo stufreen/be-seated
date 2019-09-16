@@ -8,6 +8,7 @@
 
   &.scrolled {
     background: white;
+    color: black;
   }
 }
 
@@ -25,5 +26,6 @@
 }
 
 .bs_desktopMenu_link {
-  color: black;
+  color: white;
+  font-weight: 500;
 }

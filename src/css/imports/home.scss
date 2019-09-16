@@ -1,0 +1,13 @@
+.bs_hero {
+  min-height: 80vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bs_heroText {
+  color: white;
+  font-weight: 500;
+  max-width: 40%;
+}
