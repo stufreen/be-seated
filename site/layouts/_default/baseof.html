@@ -4,20 +4,23 @@
 
 <main aria-role="main">
   <header class="bs_hero" style="background-image: url({{ .Params.hero_image }})">
-    <h1 class="bs_heroText">{{ .Params.hero_text }}</h1>
+    <div class="bs_heroContent">
+      <div class="bs_heroLogo"></div>
+      <h1 class="bs_heroText">{{ .Params.hero_text }}</h1>
+    </div>
   </header>
   {{ with .Site.GetPage "/repairs" }}
-    <section class="bs_homeRepairsSection">
-      <h2 class="bs_homeRepairsSection_title">{{ .Title }}</h2>
-      <div class="bs_homeRepairsSection_summary">
+    <section class="bs_homeRepairsSection bs_homeSection">
+      <h2 class="bs_homeRepairsSection_title bs_homeSection_title">{{ .Title }}</h2>
+      <div class="bs_homeRepairsSection_summary bs_homeSection_summary">
         {{ .Params.summary }}
       </div>
     </section>
   {{end}}
   {{ with .Site.GetPage "/supplies" }}
-    <section class="bs_homeSuppliesSection">
-      <h2 class="bs_homeSuppliesSection_title">{{ .Title }}</h2>
-      <div class="bs_homeSuppliesSection_summary">
+    <section class="bs_homeSuppliesSection bs_homeSection">
+      <h2 class="bs_homeSuppliesSection_title bs_homeSection_title">{{ .Title }}</h2>
+      <div class="bs_homeSuppliesSection_summary bs_homeSection_summary">
         {{ .Params.summary }}
       </div>
     </section>
