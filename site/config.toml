@@ -4,4 +4,6 @@ languageCode = "en-us"
 languageLang = "en"
 sectionPagesMenu = "main"
 title = "Be Seated"
-cloudinary_url = "https://res.cloudinary.com/du7zfoh2l/image/upload"
+
+[params]
+  cloudinary_url = "https://res.cloudinary.com/du7zfoh2l/image/upload"

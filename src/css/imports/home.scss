@@ -38,6 +38,7 @@
   padding: $spacing_4 $spacing_3;
   padding-right: 0;
   display: flex;
+  align-items: stretch;
 }
 
 .bs_homeSection_title {
@@ -60,16 +61,13 @@
 }
 
 .bs_homeSection_textBlock {
-  flex: 1 1 auto;
-  width: 45%;
+  flex: 6;
+  // width: 45%;
   padding-right: $spacing_3;
 }
 
 .bs_homeSection_imageBlock {
-  flex: 1 1 auto;
-  width: 55%;
-}
-
-.bs_homeSection_image {
-  width: 100%;
+  flex: 5;
+  height: 16em;
+  background-size: cover;
 }
