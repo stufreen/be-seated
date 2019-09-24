@@ -11,7 +11,7 @@ title = "Supplies"
 item_image = "/v1569368148/uploads/RH-2T_ykvunv.jpg"
 item_name = "Danish cord"
 [[home_items]]
-item_image = "/uploads/S-FRSH24-2.jpg"
+item_image = "/v1569368166/uploads/S-FRSH24-2_y0ueqo.jpg"
 item_name = "Rush seat"
 [[home_items]]
 item_image = "/uploads/RH-2T-1.jpg"
