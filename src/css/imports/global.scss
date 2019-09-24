@@ -1,9 +1,9 @@
 // Spacing
-$spacing_1: 0.5rem;
-$spacing_2: 1rem;
-$spacing_3: 2rem;
-$spacing_4: 4rem;
-$spacing_5: 8rem;
+$spacing_1: 0.55rem;
+$spacing_2: 1.1rem;
+$spacing_3: 2.2rem;
+$spacing_4: 4.4rem;
+$spacing_5: 8.8rem;
 
 // Typography
 $typography_1: 2.6rem;
@@ -14,8 +14,10 @@ $typography_5: 1rem;
 $typography_6: 0.85rem;
 
 // Colours
-$ink: rgb(53, 57, 65);
-$lightGrey: rgb(240, 240, 240);
+$ink: rgb(56, 62, 75);
+$grey: rgb(182, 196, 211);
+$lightGrey: rgb(240, 242, 244);
+$blue: rgb(37, 79, 207);
 
 // Fonts
 @font-face {
@@ -24,7 +26,6 @@ $lightGrey: rgb(240, 240, 240);
        url('../fonts/interstate-bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
-
 }
 
 @font-face {
@@ -33,7 +34,6 @@ $lightGrey: rgb(240, 240, 240);
        url('../fonts/interstate-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
@@ -54,8 +54,25 @@ html {
 
 body {
   font-size: 1.2em;
+  color: $ink;
 }
 
 a {
   text-decoration: none;
+}
+
+.shadow-button {
+  background: white;
+  color: $blue;
+  box-shadow: 0.15em 0.3em 1em $grey;
+  padding: 1em 2em;
+  font-size: $typography_6;
+  font-weight: bold;
+  border-radius: 0.3em;
+  display: inline-block;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }

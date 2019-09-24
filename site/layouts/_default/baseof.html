@@ -9,22 +9,35 @@
       <h1 class="bs_heroText">{{ .Params.hero_text }}</h1>
     </div>
   </header>
-  {{ with .Site.GetPage "/repairs" }}
-    <section class="bs_homeRepairsSection bs_homeSection">
-      <h2 class="bs_homeRepairsSection_title bs_homeSection_title">{{ .Title }}</h2>
-      <div class="bs_homeRepairsSection_summary bs_homeSection_summary">
-        {{ .Params.summary }}
-      </div>
-    </section>
-  {{end}}
-  {{ with .Site.GetPage "/supplies" }}
-    <section class="bs_homeSuppliesSection bs_homeSection">
-      <h2 class="bs_homeSuppliesSection_title bs_homeSection_title">{{ .Title }}</h2>
-      <div class="bs_homeSuppliesSection_summary bs_homeSection_summary">
-        {{ .Params.summary }}
-      </div>
-    </section>
-  {{end}}
+  <div class="bs_homeSections">
+    {{ with .Site.GetPage "/repairs" }}
+      <section class="bs_homeRepairsSection bs_homeSection">
+        <div class="bs_homeSection_textBlock">
+            <h2 class="bs_homeRepairsSection_title bs_homeSection_title">{{ .Title }}</h2>
+            <div class="bs_homeRepairsSection_summary bs_homeSection_summary">
+              {{ .Params.summary }}
+            </div>
+            <a href="{{ .Permalink }}" class="bs_homeSection_seeMore">See more</a>
+        </div>
+        <div class="bs_homeSection_imageBlock">
+          <img src="{{ .Params.home_image }}" alt="Repairs" class="bs_homeSection_image" />
+        </div>
+      </section>
+    {{end}}
+    <div class="bs_homeSection_divider"></div>
+    {{ with .Site.GetPage "/supplies" }}
+      <section class="bs_homeSuppliesSection bs_homeSection">
+        <div class="bs_homeSection_textBlock">
+          <h2 class="bs_homeSuppliesSection_title bs_homeSection_title">{{ .Title }}</h2>
+          <div class="bs_homeSuppliesSection_summary bs_homeSection_summary">
+            {{ .Params.summary }}
+          </div>
+          <a href="{{ .Permalink }}" class="bs_homeSection_seeMore">See more</a>
+        </div>
+        <div class="bs_homeSection_imageBlock"></div>
+      </section>
+    {{end}}
+  </div>
 </main>
 
 {{ block "footer" . }}{{ partial "footer" . }}{{end}}

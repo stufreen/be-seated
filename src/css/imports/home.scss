@@ -29,9 +29,15 @@
   margin-left: $spacing_3;
 }
 
+.bs_homeSections {
+  background: white;
+}
+
 .bs_homeSection {
   color: $ink;
-  padding: $spacing_3;
+  padding: $spacing_4 $spacing_3;
+  padding-right: 0;
+  display: flex;
 }
 
 .bs_homeSection_title {
@@ -39,4 +45,31 @@
   font-size: $typography_1;
   font-weight: normal;
   margin-top: 0;
+}
+
+.bs_homeSection_divider {
+  width: 6em;
+  height: 0.2em;
+  background-color: $grey;
+  margin-left: $spacing_3;
+}
+
+.bs_homeSection_seeMore {
+  @extend .shadow-button;
+  margin-top: 2em;
+}
+
+.bs_homeSection_textBlock {
+  flex: 1 1 auto;
+  width: 45%;
+  padding-right: $spacing_3;
+}
+
+.bs_homeSection_imageBlock {
+  flex: 1 1 auto;
+  width: 55%;
+}
+
+.bs_homeSection_image {
+  width: 100%;
 }
