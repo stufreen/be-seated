@@ -17,7 +17,7 @@ sections:
 upload_dir: uploads
 public_path: https://res.cloudinary.com/du7zfoh2l/image/upload
 front_matter_path: ''
-use_front_matter_path: 
+use_front_matter_path: true
 file_template: ":filename:"
 instant_preview: true
 build:
