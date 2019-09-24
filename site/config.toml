@@ -3,4 +3,5 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 languageCode = "en-us"
 languageLang = "en"
 sectionPagesMenu = "main"
-title = "My new Victor-Hugo site"
+title = "Be Seated"
+cloudinary_url = "https://res.cloudinary.com/du7zfoh2l/image/upload"
