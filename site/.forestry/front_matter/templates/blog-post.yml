@@ -18,3 +18,5 @@ fields:
     maxSize: 250
   label: Feature image
   description: Appears on home page
+pages:
+- site/content/journal/third-post.md
