@@ -91,9 +91,18 @@
   }
 }
 
+.bs_homeSuppliesSection_productImageWrapper {
+  overflow: hidden;
+}
+
 .bs_homeSuppliesSection_productImage {
   width: 100%;
   padding-bottom: $spacing_1;
+  transition: transform 1s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .bs_homeJournal {

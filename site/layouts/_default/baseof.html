@@ -3,7 +3,7 @@
 {{ block "desktop-menu" . }}{{ partial "desktop-menu" . }}{{end}}
 
 <main aria-role="main">
-  <header class="bs_hero" style="background-image: url('{{ .Site.Params.cloudinary_url }}/c_fill,g_center,h_1600,q_70,w_1600{{ .Params.hero_image }}')">
+  <header class="bs_hero" style="background-image: url('{{ .Site.Params.cloudinary_url }}/c_fill,g_center,h_2000,q_50,w_2000{{ .Params.hero_image }}')">
     <div class="bs_heroContent">
       <div class="bs_heroLogo"></div>
       <h1 class="bs_heroText">{{ .Params.hero_text }}</h1>
@@ -37,7 +37,9 @@
         <div class="bs_homeSuppliesSection_productsBlock">
           {{ range .Params.home_items }}
             <figure class="bs_homeSuppliesSection_productItem">
-              <img class="bs_homeSuppliesSection_productImage" src="{{ $.Site.Params.cloudinary_url }}/c_fill,g_center,h_400,q_70,w_400{{ .item_image }}" alt="{{ .item_name }}" />
+              <div class="bs_homeSuppliesSection_productImageWrapper">
+                <img class="bs_homeSuppliesSection_productImage" src="{{ $.Site.Params.cloudinary_url }}/c_fill,g_center,h_400,q_70,w_400{{ .item_image }}" alt="{{ .item_name }}" />
+              </div>
               <figcaption>{{ .item_name }}</figcaption>
             </figure>
           {{ end }}
