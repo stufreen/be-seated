@@ -58,6 +58,7 @@
           <time class="bs_homeJournal_featureDate">{{ .Date.Format "January 2, 2006" }}</time>
           <div class="bs_homeJournal_divider"></div>
           <p class="bs_homeJournal_featureSummary">{{ .Params.summary }}</p>
+          <a href="{{ .Permalink }}" class="bs_homeJournal_readMore">Read more</a>
         </div>
       </article>
     {{ end }}

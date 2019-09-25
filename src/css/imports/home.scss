@@ -99,7 +99,7 @@
 .bs_homeJournal {
   color: white;
   background-color: $dark_bg_color;
-  padding: $spacing_3 0;
+  padding: $spacing_3 0 $spacing_4 0;
 }
 
 .bs_homeJournal_title {
@@ -148,5 +148,11 @@
 }
 
 .bs_homeJournal_featureSummary {
+  line-height: 1.6em;
+}
+
+.bs_homeJournal_readMore {
+  @extend .dark-button;
+  margin-top: $spacing_1;
   line-height: 1.6em;
 }
