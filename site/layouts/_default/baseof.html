@@ -43,6 +43,12 @@
       </section>
     {{end}}
   </div>
+  <section class="bs_homeJournal">
+    <h3 class="bs_homeJournal_title">Journal</h3>
+    {{ range first 1 ((where .Pages "Type" "journal").ByDate.Reverse) }}
+      {{ .Title }}
+    {{ end }}
+  </section>
 </main>
 
 {{ block "footer" . }}{{ partial "footer" . }}{{end}}

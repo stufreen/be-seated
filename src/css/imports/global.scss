@@ -14,11 +14,14 @@ $typography_5: 1rem;
 $typography_6: 0.8rem;
 
 // Colours
-$ink: rgb(56, 62, 75);
-$ink_light: rgb(151, 156, 168);
-$grey: rgb(182, 196, 211);
+$ink: rgb(46, 49, 51);
+$ink_light: rgb(151, 156, 159);
+$grey: rgb(182, 196, 200);
 $light_grey: rgb(240, 242, 244);
 $blue: rgb(37, 79, 207);
+$bright_bg_color: rgb(250, 248, 243);
+$dark_bg_color: rgb(41, 41, 38);
+$mid_bg_color: rgb(182, 184, 180);
 
 // Fonts
 @font-face {
@@ -49,7 +52,7 @@ $body_font: 'interstate', sans-serif;
 $accent_font: Times, 'Times New Roman', serif;
 
 html {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: $body_font;
   background-color: $light_grey;
 }
@@ -64,14 +67,14 @@ a {
 
 .shadow-button {
   background: white;
-  color: $blue;
-  box-shadow: 0.15em 0.3em 1em $grey;
+  color: $dark_bg_color;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0 0.1em 1em rgba(0, 0, 0, 0.2);
   padding: 0.6em 2em;
   font-size: $typography_6;
   font-weight: bold;
-  border-radius: 0.3em;
   display: inline-block;
   transition: opacity 0.2s;
+  border-radius: 2px;
 
   &:hover {
     opacity: 0.7;

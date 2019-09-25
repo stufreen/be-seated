@@ -30,12 +30,13 @@
 }
 
 .bs_homeSections {
-  background: white;
+  padding: $spacing_2 0;
+  background: $bright_bg_color;
 }
 
 .bs_homeSection {
   color: $ink;
-  padding: $spacing_4 $spacing_3;
+  padding: $spacing_3;
   padding-right: 0;
   display: flex;
   align-items: stretch;
@@ -44,7 +45,7 @@
 .bs_homeSection_title {
   font-family: $accent_font;
   font-size: $typography_1;
-  font-weight: normal;
+  font-weight: 500;
   margin-top: 0;
 }
 
@@ -93,4 +94,17 @@
 .bs_homeSuppliesSection_productImage {
   width: 100%;
   padding-bottom: $spacing_1;
+}
+
+.bs_homeJournal {
+  color: white;
+  background-color: $dark_bg_color;
+  padding: $spacing_3 0;
+}
+
+.bs_homeJournal_title {
+  font-size: $typography_1;
+  margin: 0 0 0 $spacing_3;
+  font-family: $accent_font;
+  font-weight: 500;
 }
