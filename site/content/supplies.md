@@ -14,7 +14,7 @@ item_name = "Danish cord"
 item_image = "/v1569368166/uploads/S-FRSH24-2_y0ueqo.jpg"
 item_name = "Rush seat"
 [[home_items]]
-item_image = "/uploads/RH-2T-1.jpg"
+item_image = "/v1569368148/uploads/RH-2T_ykvunv.jpg"
 item_name = "Rawhide"
 
 +++
