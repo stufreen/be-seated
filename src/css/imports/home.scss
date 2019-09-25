@@ -24,7 +24,7 @@
   flex: 1 1 auto;
   width: 100%;
   color: white;
-  font-weight: 500;
+  font-weight: normal;
   font-size: $typography_2;
   margin-left: $spacing_3;
 }
@@ -45,7 +45,7 @@
 .bs_homeSection_title {
   font-family: $accent_font;
   font-size: $typography_1;
-  font-weight: 500;
+  font-weight: bold;
   margin-top: 0;
 }
 
@@ -106,7 +106,7 @@
   font-size: $typography_1;
   margin: 0 0 0 $spacing_3;
   font-family: $accent_font;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .bs_homeJournal_feature {

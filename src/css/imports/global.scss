@@ -48,8 +48,33 @@ $mid_bg_color: rgb(193, 199, 204);
   font-style: italic;
 }
 
-$body_font: 'interstate', sans-serif;
-$accent_font: Times, 'Times New Roman', serif;
+// Fonts
+@font-face {
+  font-family: 'inter';
+  src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+       url('../fonts/Inter-SemiBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+       url('../fonts/Inter-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('../fonts/Inter-Italic.woff2') format('woff2'),
+       url('../fonts/Inter-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+$body_font: 'inter', sans-serif;
+$accent_font: 'inter', sans-serif;
 
 html {
   font-size: 1.1em;
