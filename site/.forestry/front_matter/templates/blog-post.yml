@@ -18,5 +18,14 @@ fields:
     maxSize: 250
   label: Feature image
   description: Appears on home page
+- name: summary
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Summary
 pages:
 - site/content/journal/third-post.md
