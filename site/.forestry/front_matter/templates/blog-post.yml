@@ -12,3 +12,9 @@ fields:
   label: Date
   config:
     required: true
+- name: feature_image
+  type: file
+  config:
+    maxSize: 250
+  label: Feature image
+  description: Appears on home page
