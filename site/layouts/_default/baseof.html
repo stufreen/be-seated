@@ -22,7 +22,9 @@
         <div class="bs_homeSection_imageBlock" style="background-image: url('{{ .Site.Params.cloudinary_url }}/c_fill,g_center,h_1600,q_70,w_1600{{ .Params.home_image }}')"></div>
       </section>
     {{end}}
+
     <div class="bs_homeSection_divider"></div>
+
     {{ with .Site.GetPage "/supplies" }}
       <section class="bs_homeSuppliesSection bs_homeSection">
         <div class="bs_homeSection_textBlock">
@@ -43,10 +45,21 @@
       </section>
     {{end}}
   </div>
+
   <section class="bs_homeJournal">
     <h3 class="bs_homeJournal_title">Journal</h3>
     {{ range first 1 ((where .Pages "Type" "journal").ByDate.Reverse) }}
-      {{ .Title }}
+      <article class="bs_homeJournal_feature">
+        <div class="bs_homeJournal_featureImageBlock">
+          <img class="bs_homeJournal_featureImage" src="{{ .Site.Params.cloudinary_url }}/c_fill,g_center,h_800,q_70,w_1200{{ .Params.feature_image }}" />
+        </div>
+        <div class="bs_homeJournal_featureText">
+          <h4 class="bs_homeJournal_featureTitle">{{ .Title }}</h4>
+          <time class="bs_homeJournal_featureDate">{{ .Date.Format "January 2, 2006" }}</time>
+          <div class="bs_homeJournal_divider"></div>
+          <p class="bs_homeJournal_featureSummary">{{ .Params.summary }}</p>
+        </div>
+      </article>
     {{ end }}
   </section>
 </main>

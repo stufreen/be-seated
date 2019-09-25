@@ -108,3 +108,45 @@
   font-family: $accent_font;
   font-weight: 500;
 }
+
+.bs_homeJournal_feature {
+  padding-top: $spacing_3;
+  display: flex;
+}
+
+.bs_homeJournal_featureImageBlock {
+  display: block;
+  flex: 4;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.bs_homeJournal_featureText {
+  flex: 6;
+  padding: 0 $spacing_3;
+}
+
+.bs_homeJournal_featureTitle {
+  font-size: $typography_3;
+  margin: 0;
+}
+
+.bs_homeJournal_featureDate {
+  margin-top: $spacing_1;
+  margin-bottom: $spacing_2;
+  font-weight: normal;
+  font-size: $typography_6;
+  display: block;
+}
+
+.bs_homeJournal_divider {
+  width: 4em;
+  height: 0.2em;
+  background-color: white;
+}
+
+.bs_homeJournal_featureSummary {
+  line-height: 1.6em;
+}
