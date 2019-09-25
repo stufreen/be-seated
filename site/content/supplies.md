@@ -8,7 +8,7 @@ summary = "Be Seated offers a great selection of supplies including cane, rush s
 title = "Supplies"
 [menu.main]
 [[home_items]]
-item_image = "/v1569368148/uploads/RH-2T_ykvunv.jpg"
+item_image = "/v1569368190/uploads/S-DSCSPL-2_wtjzf0.jpg"
 item_name = "Danish cord"
 [[home_items]]
 item_image = "/v1569368166/uploads/S-FRSH24-2_y0ueqo.jpg"
