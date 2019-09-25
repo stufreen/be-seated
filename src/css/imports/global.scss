@@ -6,17 +6,18 @@ $spacing_4: 4.4rem;
 $spacing_5: 8.8rem;
 
 // Typography
-$typography_1: 2.6rem;
-$typography_2: 2.2rem;
+$typography_1: 2.5rem;
+$typography_2: 2.0rem;
 $typography_3: 1.5rem;
 $typography_4: 1.25rem;
 $typography_5: 1rem;
-$typography_6: 0.85rem;
+$typography_6: 0.8rem;
 
 // Colours
 $ink: rgb(56, 62, 75);
+$ink_light: rgb(151, 156, 168);
 $grey: rgb(182, 196, 211);
-$lightGrey: rgb(240, 242, 244);
+$light_grey: rgb(240, 242, 244);
 $blue: rgb(37, 79, 207);
 
 // Fonts
@@ -48,12 +49,12 @@ $body_font: 'interstate', sans-serif;
 $accent_font: Times, 'Times New Roman', serif;
 
 html {
+  font-size: 1.2em;
   font-family: $body_font;
-  background-color: $lightGrey;
+  background-color: $light_grey;
 }
 
 body {
-  font-size: 1.2em;
   color: $ink;
 }
 
@@ -65,7 +66,7 @@ a {
   background: white;
   color: $blue;
   box-shadow: 0.15em 0.3em 1em $grey;
-  padding: 1em 2em;
+  padding: 0.6em 2em;
   font-size: $typography_6;
   font-weight: bold;
   border-radius: 0.3em;
