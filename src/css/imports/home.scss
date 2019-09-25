@@ -49,7 +49,7 @@
 }
 
 .bs_homeSection_divider {
-  width: 6em;
+  width: 4em;
   height: 0.2em;
   background-color: $grey;
   margin-left: $spacing_3;
@@ -57,17 +57,39 @@
 
 .bs_homeSection_seeMore {
   @extend .shadow-button;
-  margin-top: 2em;
+  margin-top: $spacing_3;
 }
 
 .bs_homeSection_textBlock {
   flex: 6;
-  // width: 45%;
   padding-right: $spacing_3;
+  line-height: 1.6em;
 }
 
 .bs_homeSection_imageBlock {
   flex: 5;
   height: 16em;
   background-size: cover;
+}
+
+.bs_homeSuppliesSection_productsBlock {
+  flex: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bs_homeSuppliesSection_productItem {
+  width: 32%;
+  position: relative;
+
+  figcaption {
+    font-size: $typography_5;
+    font-weight: bold;
+  }
+}
+
+.bs_homeSuppliesSection_productImage {
+  width: 100%;
+  padding-bottom: $spacing_1;
 }
