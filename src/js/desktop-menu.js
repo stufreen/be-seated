@@ -1,29 +1,31 @@
-import * as animol from "animol";
+// import * as animol from "animol";
 
 let lastScroll = window.scrollY;
 let state = "hidden";
 
 const showMenus = (menus) => {
   for (let i = 0; i < menus.length; i++) {
-    animol.css(
-      menus[i],
-      500,
-      {transform: {translateY: "-100%"}},
-      {transform: {translateY: "0%"}},
-      animol.Easing.easeOutCubic
-    );
+    // animol.css(
+    //   menus[i],
+    //   500,
+    //   {transform: {translateY: "-100%"}},
+    //   {transform: {translateY: "0%"}},
+    //   animol.Easing.easeOutCubic
+    // );
+    menus[i].classList.remove("hide");
   }
 };
 
 const hideMenus = (menus) => {
   for (let i = 0; i < menus.length; i++) {
-    animol.css(
-      menus[i],
-      500,
-      {transform: {translateY: "0%"}},
-      {transform: {translateY: "-100%"}},
-      animol.Easing.easeIn
-    );
+    // animol.css(
+    //   menus[i],
+    //   500,
+    //   {transform: {translateY: "0%"}},
+    //   {transform: {translateY: "-100%"}},
+    //   animol.Easing.easeIn
+    // );
+    menus[i].classList.add("hide");
   }
 };
 
