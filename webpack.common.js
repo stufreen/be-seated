@@ -1,6 +1,5 @@
 const webpack = require("webpack");
 const path = require("path");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const AssetsPlugin = require("assets-webpack-plugin");
 
@@ -29,9 +28,10 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          "file-loader"
-        ]
+        loader: "file-loader",
+        options: {
+          outputPath: "assets/fonts",
+        },
       }
     ]
   },
