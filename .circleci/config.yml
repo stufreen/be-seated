@@ -53,7 +53,7 @@ jobs:
           command: sudo pip install awscli
       - run:
           name: Deploy to S3
-          command: aws s3 sync --acl public-read ~/repo/dist s3:/beseated.ca/ --delete
+          command: aws s3 sync --acl public-read ~/repo/dist s3://beseated.ca/ --delete
 
 workflows:
   version: 2
