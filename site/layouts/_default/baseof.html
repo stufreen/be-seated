@@ -53,7 +53,7 @@
     {{ range first 1 ((where .Pages "Type" "journal").ByDate.Reverse) }}
       <article class="bs_homeJournal_feature">
         <div class="bs_homeJournal_featureImageBlock">
-          <img class="bs_homeJournal_featureImage" src="{{ .Site.Params.cloudinary_url }}/c_fill,g_center,h_800,q_70,w_1200{{ .Params.feature_image }}" />
+          <img class="bs_homeJournal_featureImage" src="{{ .Site.Params.cloudinary_url }}/c_fill,g_center,h_500,q_70,w_750{{ .Params.feature_image }}" />
         </div>
         <div class="bs_homeJournal_featureText">
           <h4 class="bs_homeJournal_featureTitle">{{ .Title }}</h4>

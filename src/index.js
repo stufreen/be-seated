@@ -1,7 +1,13 @@
-// import {Application} from "stimulus";
-// import {definitionsFromContext} from "stimulus/webpack-helpers";
 import "./css/main.scss";
+import initializeDesktopMenu from "./js/desktop-menu";
 
-// const application = Application.start();
-// const context = require.context("./controllers", true, /\.js$/)
-// application.load(definitionsFromContext(context));
+// Wait for document to load
+(function() {
+  if (document.readyState !== "loading") {
+    initializeDesktopMenu("scroll-hide");
+  } else {
+    document.addEventListener("DOMContentLoaded", () => {
+      initializeDesktopMenu("scroll-hide");
+    });
+  }
+}());

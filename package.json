@@ -68,6 +68,7 @@
     "natives": "1.1.6"
   },
   "dependencies": {
+    "animol": "^1.0.9",
     "stimulus": "^1.1.1"
   }
 }

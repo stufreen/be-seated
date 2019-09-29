@@ -6,9 +6,12 @@
   padding: $spacing_3;
   z-index: 1;
 
-  &.scrolled {
-    background: white;
-    color: black;
+  &.scroll-hide {
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid $light-grey;
+    padding: $spacing_2 $spacing_3;
+    transform: translateY(-100%);
   }
 }
 
@@ -28,4 +31,8 @@
 .bs_desktopMenu_link {
   color: white;
   font-weight: 500;
+
+  .scroll-hide & {
+    color: $ink;
+  }
 }
