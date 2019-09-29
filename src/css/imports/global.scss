@@ -1,9 +1,9 @@
 // Spacing
-$spacing_1: 0.55rem;
-$spacing_2: 1.1rem;
-$spacing_3: 2.2rem;
-$spacing_4: 4.4rem;
-$spacing_5: 8.8rem;
+$spacing_1: 0.5rem;
+$spacing_2: 1rem;
+$spacing_3: 2.5rem;
+$spacing_4: 4rem;
+$spacing_5: 7rem;
 
 // Typography
 $typography_1: 2.5rem;
@@ -25,35 +25,18 @@ $mid_bg_color: rgb(193, 199, 204);
 
 // Fonts
 @font-face {
-  font-family: 'interstate';
-  src: url('../fonts/interstate-bold-webfont.woff2') format('woff2'),
-       url('../fonts/interstate-bold-webfont.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'interstate';
-  src: url('../fonts/interstate-regular-webfont.woff2') format('woff2'),
-       url('../fonts/interstate-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'interstate';
-  src: url('../fonts/interstate-regularitalic-webfont.woff2') format('woff2'),
-       url('../fonts/interstate-regularitalic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-}
-
-// Fonts
-@font-face {
   font-family: 'inter';
   src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
        url('../fonts/Inter-SemiBold.woff') format('woff');
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('../fonts/Inter-Medium.woff2') format('woff2'),
+       url('../fonts/Inter-Medium.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
 }
 

@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: $spacing_3;
+  padding: $spacing_2 $spacing_3;
   z-index: 1;
 
   &.scroll-hide {
@@ -12,10 +12,16 @@
     border-bottom: 1px solid $light-grey;
     padding: $spacing_2 $spacing_3;
     transform: translateY(0);
-    transition: transform 0.4s;
+    transition: transform 0.4s, opacity 0s;
 
     &.hide {
       transform: translateY(-100%);
+    }
+
+    &.transparent {
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.4s, opacity 0.2s;
     }
   }
 }

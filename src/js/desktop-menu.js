@@ -1,42 +1,43 @@
-// import * as animol from "animol";
-
 let lastScroll = window.scrollY;
 let state = "hidden";
 
 const showMenus = (menus) => {
   for (let i = 0; i < menus.length; i++) {
-    // animol.css(
-    //   menus[i],
-    //   500,
-    //   {transform: {translateY: "-100%"}},
-    //   {transform: {translateY: "0%"}},
-    //   animol.Easing.easeOutCubic
-    // );
     menus[i].classList.remove("hide");
   }
 };
 
 const hideMenus = (menus) => {
   for (let i = 0; i < menus.length; i++) {
-    // animol.css(
-    //   menus[i],
-    //   500,
-    //   {transform: {translateY: "0%"}},
-    //   {transform: {translateY: "-100%"}},
-    //   animol.Easing.easeIn
-    // );
     menus[i].classList.add("hide");
   }
 };
 
+const fadeInMenus = (menus) => {
+  for (let i = 0; i < menus.length; i++) {
+    menus[i].classList.remove("transparent");
+  }
+};
+
+const fadeOutMenus = (menus) => {
+  for (let i = 0; i < menus.length; i++) {
+    menus[i].classList.add("transparent");
+  }
+};
+
+
 const handleScroll = (menus) => {
   const newScroll = window.scrollY;
-  const hideThreshold = 1;
+  const hideThreshold = 0;
 
-  if (newScroll > hideThreshold && newScroll < lastScroll && state === "hidden") {
+  if (newScroll <= hideThreshold) {
+    state = "hidden";
+    fadeOutMenus(menus);
+  } else if (newScroll < lastScroll && state === "hidden") {
     state = "open";
+    fadeInMenus(menus);
     showMenus(menus);
-  } else if ((newScroll <= hideThreshold || newScroll >= lastScroll) && state === "open") {
+  } else if (newScroll >= lastScroll && state === "open") {
     state = "hidden";
     hideMenus(menus);
   }
