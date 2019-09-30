@@ -1,28 +1,20 @@
 .bs_desktopMenu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   padding: $spacing_2 $spacing_3;
   z-index: 1;
+  transition: all 0.2s;
 
-  &.scroll-hide {
-    position: fixed;
+  &.off-top {
+    opacity: 0;
+  }
+
+  &.off-top.scrolled-up {
+    opacity: 1;
     background-color: white;
-    border-bottom: 1px solid $light-grey;
-    padding: $spacing_2 $spacing_3;
-    transform: translateY(0);
-    transition: transform 0.4s, opacity 0s;
-
-    &.hide {
-      transform: translateY(-100%);
-    }
-
-    &.transparent {
-      opacity: 0;
-      pointer-events: none;
-      transition: transform 0.4s, opacity 0.2s;
-    }
+    border-bottom: 0.5px solid $light-grey;
   }
 }
 
@@ -37,13 +29,37 @@
   margin: 0;
   margin-right: $spacing_3;
   list-style: none;
+  position: relative;
+
+  &:hover .bs_desktopMenu_underline {
+    width: 100%;
+    left: 0;
+    opacity: 1;
+  }
 }
 
 .bs_desktopMenu_link {
   color: white;
   font-weight: 500;
+  font-size: $typography_5;
+  transition: all 0.4s;
 
-  .scroll-hide & {
+  .scrolled-up.off-top & {
     color: $ink;
+  }
+}
+
+.bs_desktopMenu_underline {
+  height: 2px;
+  width: 0;
+  left: 50%;
+  position: absolute;
+  bottom: -0.3rem;
+  background-color: white;
+  transition: all 0.5s;
+  opacity: 0;
+
+  .scrolled-up.off-top & {
+    background-color: $ink;
   }
 }

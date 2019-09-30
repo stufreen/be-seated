@@ -1,45 +1,36 @@
 let lastScroll = window.scrollY;
 let state = "hidden";
 
-const showMenus = (menus) => {
-  for (let i = 0; i < menus.length; i++) {
-    menus[i].classList.remove("hide");
+function eachElement(elements, func) {
+  for (let i = 0; i < elements.length; i++) {
+    func(elements[i]);
   }
-};
-
-const hideMenus = (menus) => {
-  for (let i = 0; i < menus.length; i++) {
-    menus[i].classList.add("hide");
-  }
-};
-
-const fadeInMenus = (menus) => {
-  for (let i = 0; i < menus.length; i++) {
-    menus[i].classList.remove("transparent");
-  }
-};
-
-const fadeOutMenus = (menus) => {
-  for (let i = 0; i < menus.length; i++) {
-    menus[i].classList.add("transparent");
-  }
-};
-
+}
 
 const handleScroll = (menus) => {
   const newScroll = window.scrollY;
-  const hideThreshold = 0;
+  const hideThreshold = menus[0].clientHeight;
 
-  if (newScroll <= hideThreshold) {
-    state = "hidden";
-    fadeOutMenus(menus);
-  } else if (newScroll < lastScroll && state === "hidden") {
+  if (newScroll > hideThreshold) {
+    eachElement(menus, (menu) => {
+      menu.classList.add("off-top");
+    });
+  } else {
+    eachElement(menus, (menu) => {
+      menu.classList.remove("off-top");
+    });
+  }
+
+  if (newScroll < lastScroll && state === "hidden") {
     state = "open";
-    fadeInMenus(menus);
-    showMenus(menus);
+    eachElement(menus, (menu) => {
+      menu.classList.add("scrolled-up");
+    });
   } else if (newScroll >= lastScroll && state === "open") {
     state = "hidden";
-    hideMenus(menus);
+    eachElement(menus, (menu) => {
+      menu.classList.remove("scrolled-up");
+    });
   }
 
   lastScroll = newScroll;

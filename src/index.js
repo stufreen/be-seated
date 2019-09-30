@@ -4,10 +4,10 @@ import initializeDesktopMenu from "./js/desktop-menu";
 // Wait for document to load
 (function() {
   if (document.readyState !== "loading") {
-    initializeDesktopMenu("scroll-hide");
+    initializeDesktopMenu("bs_desktopMenu");
   } else {
     document.addEventListener("DOMContentLoaded", () => {
-      initializeDesktopMenu("scroll-hide");
+      initializeDesktopMenu("bs_desktopMenu");
     });
   }
 }());

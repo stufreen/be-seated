@@ -4,44 +4,24 @@
       <a class="bs_desktopMenu_link" href="/">
         Home
       </a>
+      <div class="bs_desktopMenu_underline"></div>
     </li>
     {{ with .Site.GetPage "/repairs" }}
       <li class="bs_desktopMenu_item">
         <a class="bs_desktopMenu_link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        <div class="bs_desktopMenu_underline"></div>
       </li>
     {{end}}
     {{ with .Site.GetPage "/supplies" }}
       <li class="bs_desktopMenu_item">
         <a class="bs_desktopMenu_link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        <div class="bs_desktopMenu_underline"></div>
       </li>
     {{end}}
     {{ with .Site.GetPage "/journal" }}
       <li class="bs_desktopMenu_item">
         <a class="bs_desktopMenu_link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-      </li>
-    {{end}}
-  </ul>
-</nav>
-<nav class="bs_desktopMenu scroll-hide hide">
-  <ul class="bs_desktopMenu_list">
-    <li class="bs_desktopMenu_item">
-      <a class="bs_desktopMenu_link" href="/">
-        Home
-      </a>
-    </li>
-    {{ with .Site.GetPage "/repairs" }}
-      <li class="bs_desktopMenu_item">
-        <a class="bs_desktopMenu_link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-      </li>
-    {{end}}
-    {{ with .Site.GetPage "/supplies" }}
-      <li class="bs_desktopMenu_item">
-        <a class="bs_desktopMenu_link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-      </li>
-    {{end}}
-    {{ with .Site.GetPage "/journal" }}
-      <li class="bs_desktopMenu_item">
-        <a class="bs_desktopMenu_link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        <div class="bs_desktopMenu_underline"></div>
       </li>
     {{end}}
   </ul>
