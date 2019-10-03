@@ -1,0 +1,24 @@
+.bs_footer {
+  display: flex;
+  padding: $spacing_3;
+  background: white;
+  align-items: flex-start;
+}
+
+.bs_footer_logo {
+  width: 12rem;
+}
+
+.bs_footer_blockA, .bs_footer_blockB {
+  margin-left: $spacing_4;
+  line-height: 1.7em;
+
+  p {
+    margin: 0;
+    color: $ink;
+  }
+
+  a {
+    color: $accent_color;
+  }
+}

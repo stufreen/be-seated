@@ -13,11 +13,14 @@
   width: 60rem;
 }
 
+.bs_heroLogo_wrapper {
+  padding-right: $spacing_4;
+  width: 100%;
+}
+
 .bs_heroLogo {
   flex: 1 1 auto;
   width: 100%;
-  padding-bottom: 30%;
-  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .bs_heroText {
@@ -26,7 +29,6 @@
   color: white;
   font-weight: 500;
   font-size: $typography_2;
-  margin-left: $spacing_3;
 }
 
 .bs_homeSections {
