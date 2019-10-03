@@ -1,4 +1,27 @@
 ---
 label: Footer
 hide_body: true
-fields: []
+fields:
+- name: footer_image
+  type: file
+  config:
+    maxSize: 250
+  label: Footer image
+- name: content_block_a
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content block A
+- name: content_block_b
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content block B
