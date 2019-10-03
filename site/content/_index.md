@@ -7,5 +7,6 @@ hero_image: "/v1569365113/uploads/ruslan-bardash-4kTbAMRAHtQ-unsplash_ky974j.jpg
 page_title: Be Seated
 seo_description: Ottawa's finest wicker and cane furniture repairs and supplies.
 social_image: ''
+logo: "/v1570143617/uploads/lockup-white_xm9pae.png"
 
 ---
