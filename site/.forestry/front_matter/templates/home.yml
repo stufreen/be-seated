@@ -2,6 +2,11 @@
 label: Home
 hide_body: true
 fields:
+- name: logo
+  type: file
+  config:
+    maxSize: 250
+  label: Logo
 - name: hero_text
   type: text
   config:
