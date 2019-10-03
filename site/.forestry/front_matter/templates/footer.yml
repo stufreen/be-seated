@@ -26,4 +26,4 @@ fields:
       format: markdown
   label: Content block B
 pages:
-- site/content/footer.md
+- site/content/Footer.md
