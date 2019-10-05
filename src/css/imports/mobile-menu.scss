@@ -1,0 +1,120 @@
+.bs_mobileMenu {
+  background-color: $ink;
+  height: $typography_1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $spacing_2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: all 0.2s;
+
+  @media (min-width: $bp_1) {
+    display: none;
+  }
+
+  &.off-top {
+    opacity: 0;
+  }
+
+  &.off-top.scrolled-up {
+    opacity: 1;
+  }
+}
+
+.bs_mobileMenu_toggle {
+
+  svg {
+    display: block;
+    width: $typography_2;
+    height: $typography_2;
+    fill: white;
+    cursor: pointer;
+    transition: opacity 0.1s;
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.bs_mobileMenu_headerImage {
+  height: $typography_2;
+}
+
+.bs_mobileMenu_drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 11;
+  background-color: $ink;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.1s ease-in-out;
+
+  &.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @media (min-width: $bp_1) {
+    display: none;
+  }
+}
+
+.bs_mobileMenu_drawerHeader {
+  height: $typography_1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $spacing_2;
+}
+
+.bs_mobileMenu_list {
+  list-style-type: none;
+  margin: $spacing_3;
+  padding: 0;
+
+  li {
+    margin: 0 0 $spacing_2 0;
+    padding: 0;
+  }
+}
+
+.bs_mobileMenu_link {
+  color: white;
+  transition: opacity 0.1s;
+  font-size: $typography_3;
+  font-weight: bold;
+  margin-bottom: $spacing_3;
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.bs_mobileMenu_drawerFooter {
+  position: absolute;
+  bottom: $spacing_3;
+  left: $spacing_3;
+  color: white;
+}
+
+.bs_mobileMenu_footerTitle {
+  font-size: $typography_5;
+}
+
+.bs_mobileMenu_footerBlock {
+  font-size: $typography_6;
+
+  a {
+    color: white;
+    text-decoration: underline;
+    line-height: 2em;
+  }
+}

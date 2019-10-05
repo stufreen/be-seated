@@ -36,7 +36,7 @@ const handleScroll = (menus) => {
   lastScroll = newScroll;
 };
 
-export default function initializeDesktopMenu(className) {
+export default function initializeScrollHide(className) {
   const menus = document.getElementsByClassName(className);
   window.addEventListener("scroll", () => {
     handleScroll(menus);

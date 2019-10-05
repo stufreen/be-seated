@@ -1,0 +1,50 @@
+<header class="bs_mobileMenu bs_menu">
+  {{ with .Site.GetPage "/" }}
+    <img src="{{ $.Site.Params.cloudinary_url }}/h_100{{ .Params.logo }}" alt="Be Seated" class="bs_mobileMenu_headerImage" />
+  {{ end }}
+  <button type="button" class="bs_mobileMenu_toggle" id="mobile-menu-opener"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M2 13.5h14V12H2v1.5zm0-4h14V8H2v1.5zM2 4v1.5h14V4H2z"/></svg></button>
+</header>
+
+<div class="bs_mobileMenu_drawer" id="mobile-menu-drawer">
+  <div class="bs_mobileMenu_drawerHeader">
+    {{ with .Site.GetPage "/" }}
+      <img src="{{ $.Site.Params.cloudinary_url }}/h_100{{ .Params.logo }}" alt="Be Seated" class="bs_mobileMenu_headerImage" />
+    {{ end }}
+    <button type="button" class="bs_mobileMenu_toggle" id="mobile-menu-closer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"/></svg></button>
+  </div>
+  <nav class="bs_mobileMenu_pageLinks">
+    <ul class="bs_mobileMenu_list">
+      <li class="bs_mobileMenu_item">
+        <a class="bs_mobileMenu_link" href="/">
+          Home
+        </a>
+        <div class="bs_mobileMenu_underline"></div>
+      </li>
+      {{ with .Site.GetPage "/repairs" }}
+        <li class="bs_mobileMenu_item">
+          <a class="bs_mobileMenu_link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+          <div class="bs_mobileMenu_underline"></div>
+        </li>
+      {{end}}
+      {{ with .Site.GetPage "/supplies" }}
+        <li class="bs_mobileMenu_item">
+          <a class="bs_mobileMenu_link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+          <div class="bs_mobileMenu_underline"></div>
+        </li>
+      {{end}}
+      {{ with .Site.GetPage "/journal" }}
+        <li class="bs_mobileMenu_item">
+          <a class="bs_mobileMenu_link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+          <div class="bs_mobileMenu_underline"></div>
+        </li>
+      {{end}}
+    </ul>
+  </nav>
+
+  <div class="bs_mobileMenu_drawerFooter">
+    {{ with .Site.GetPage "/footer" }}
+      <h3 class="bs_mobileMenu_footerTitle">Be Seated</h3>
+      <div class="bs_mobileMenu_footerBlock">{{ .Params.content_block_a | safeHTML }}</div>
+  {{ end }}
+  </div>
+</div>

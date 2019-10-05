@@ -1,9 +1,15 @@
 .bs_hero {
-  min-height: 80vh;
+  min-height: 66vh;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: $typography_1;
+
+  @media (min-width: $bp_1) {
+    padding-top: 0;
+    min-height: 80vh;
+  }
 }
 
 .bs_heroContent {
@@ -16,11 +22,17 @@
 .bs_heroLogo_wrapper {
   padding-right: $spacing_4;
   width: 100%;
+  display: none;
+
+  @media (min-width: $bp_1) {
+    display: block;
+  }
 }
 
 .bs_heroLogo {
-  flex: 1 1 auto;
-  width: 100%;
+  max-width: 100%;
+  max-height: 6em;
+  margin: 0 auto;
 }
 
 .bs_heroText {
@@ -42,6 +54,11 @@
   padding-right: 0;
   display: flex;
   align-items: stretch;
+  flex-direction: column;
+
+  @media (min-width: $bp_1) {
+    flex-direction: row;
+  }
 }
 
 .bs_homeSection_title {
@@ -49,6 +66,7 @@
   font-size: $typography_1;
   font-weight: bold;
   margin-top: 0;
+  margin-bottom: $spacing_3;
 }
 
 .bs_homeSection_divider {
@@ -80,6 +98,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: $spacing_3;
+
+  @media (min-width: $bp_1) {
+    margin-top: 0;
+    flex-direction: row;
+  }
 }
 
 .bs_homeSuppliesSection_productItem {
@@ -123,13 +147,20 @@
 .bs_homeJournal_feature {
   padding-top: $spacing_3;
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $bp_1) {
+    flex-direction: row;
+  }
 }
 
 .bs_homeJournal_featureImageBlock {
   display: block;
   flex: 4;
+  margin-bottom: $spacing_3;
 
   img {
+    margin-bottom: 0;
     max-width: 100%;
   }
 }

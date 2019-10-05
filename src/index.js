@@ -1,13 +1,19 @@
 import "./css/main.scss";
-import initializeDesktopMenu from "./js/desktop-menu";
+import initializeScrollHide from "./js/scroll-hide-menu";
+import initializeMobileDrawer from "./js/mobile-menu-drawer";
+
+function onLoad() {
+  initializeScrollHide("bs_menu");
+  initializeMobileDrawer();
+}
 
 // Wait for document to load
 (function() {
   if (document.readyState !== "loading") {
-    initializeDesktopMenu("bs_desktopMenu");
+    onLoad();
   } else {
     document.addEventListener("DOMContentLoaded", () => {
-      initializeDesktopMenu("bs_desktopMenu");
+      onLoad();
     });
   }
 }());

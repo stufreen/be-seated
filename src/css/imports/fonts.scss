@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'inter';
+  src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+       url('../fonts/Inter-SemiBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('../fonts/Inter-Medium.woff2') format('woff2'),
+       url('../fonts/Inter-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+       url('../fonts/Inter-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('../fonts/Inter-Italic.woff2') format('woff2'),
+       url('../fonts/Inter-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// @font-face {
+//   font-family: 'gmond-display';
+//   src: url('../fonts/hinted-subset-GaramondPremrPro-MedDisp.woff2') format('woff2'),
+//       url('../fonts/hinted-subset-GaramondPremrPro-MedDisp.woff') format('woff');
+//   font-weight: 600;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: 'gmond-display';
+  src: url('../fonts/hinted-subset-GaramondPremrPro-SmbdDisp.woff2') format('woff2'),
+      url('../fonts/hinted-subset-GaramondPremrPro-SmbdDisp.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}

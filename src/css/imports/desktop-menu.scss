@@ -6,6 +6,11 @@
   padding: $spacing_2 $spacing_3;
   z-index: 1;
   transition: all 0.2s;
+  display: none;
+
+  @media (min-width: $bp_1) {
+    display: block;
+  }
 
   &.off-top {
     opacity: 0;

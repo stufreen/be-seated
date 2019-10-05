@@ -3,6 +3,11 @@
   padding: $spacing_3;
   background: white;
   align-items: flex-start;
+  flex-direction: column;
+
+  @media (min-width: $bp_1) {
+    flex-direction: row;
+  }
 }
 
 .bs_footer_logo {
@@ -10,8 +15,13 @@
 }
 
 .bs_footer_blockA, .bs_footer_blockB {
-  margin-left: $spacing_4;
+  margin-top: $spacing_2;
   line-height: 1.7em;
+
+  @media (min-width: $bp_1) {
+    margin-top: 0;
+    margin-left: $spacing_4;
+  }
 
   p {
     margin: 0;
