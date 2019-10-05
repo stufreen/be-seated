@@ -90,7 +90,14 @@
 .bs_homeSection_imageBlock {
   flex: 5;
   height: 16em;
+  width: 100%;
   background-size: cover;
+  margin-top: $spacing_3;
+
+  @media (min-width: $bp_1) {
+    margin-top: 0;
+    flex-direction: row;
+  }
 }
 
 .bs_homeSuppliesSection_productsBlock {

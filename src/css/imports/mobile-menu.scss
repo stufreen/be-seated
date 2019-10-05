@@ -1,6 +1,9 @@
+$mobile_el_size: 2.5em;
+$mobile_header_height: 4.5em;
+
 .bs_mobileMenu {
   background-color: $ink;
-  height: $typography_1;
+  height: $mobile_header_height;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,8 +32,8 @@
 
   svg {
     display: block;
-    width: $typography_2;
-    height: $typography_2;
+    width: $mobile_el_size;
+    height: $mobile_el_size;
     fill: white;
     cursor: pointer;
     transition: opacity 0.1s;
@@ -42,7 +45,7 @@
 }
 
 .bs_mobileMenu_headerImage {
-  height: $typography_2;
+  height: $mobile_el_size;
 }
 
 .bs_mobileMenu_drawer {
@@ -68,7 +71,7 @@
 }
 
 .bs_mobileMenu_drawerHeader {
-  height: $typography_1;
+  height: $mobile_header_height;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,7 +92,7 @@
 .bs_mobileMenu_link {
   color: white;
   transition: opacity 0.1s;
-  font-size: $typography_3;
+  font-size: $typography_2;
   font-weight: bold;
   margin-bottom: $spacing_3;
 
