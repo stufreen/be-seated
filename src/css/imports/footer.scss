@@ -1,7 +1,10 @@
 .bs_footer {
+  background: white;
+}
+
+.bs_footerContents {
   display: flex;
   padding: $spacing_3;
-  background: white;
   align-items: flex-start;
   flex-direction: column;
 

@@ -26,7 +26,7 @@ $mid_bg_color: rgb(193, 199, 204);
 // Breakpoints
 $bp_1: 768px;
 $bp_2: 1024px;
-$bp_huge: 1600px;
+$bp_huge: 1500px;
 
 // Fonts
 $body_font: 'inter', sans-serif;
@@ -61,6 +61,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.bs_maxWidth {
+  max-width: $bp_huge;
+  margin: 0 auto;
 }
 
 .shadow-button {

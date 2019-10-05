@@ -1,10 +1,14 @@
   {{ with .Site.GetPage "/footer" }}
     <footer class="bs_footer">
-      <a href="/">
-        <img src="{{ $.Site.Params.cloudinary_url }}/w_800{{ .Params.footer_image }}" class="bs_footer_logo" />
-      </a>
-      <div class="bs_footer_blockA">{{ .Params.content_block_a | safeHTML }}</div>
-      <div class="bs_footer_blockB">{{ .Params.content_block_b | safeHTML }}</div>
+      <div class="bs_maxWidth">
+        <div class="bs_footerContents">
+          <a href="/">
+            <img src="{{ $.Site.Params.cloudinary_url }}/w_800{{ .Params.footer_image }}" class="bs_footer_logo" />
+          </a>
+          <div class="bs_footer_blockA">{{ .Params.content_block_a | safeHTML }}</div>
+          <div class="bs_footer_blockB">{{ .Params.content_block_b | safeHTML }}</div>
+        </div>
+      </div>
     </footer>
   {{ end }}
 

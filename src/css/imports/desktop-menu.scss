@@ -3,7 +3,6 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: $spacing_2 $spacing_3;
   z-index: 1;
   transition: all 0.2s;
   display: none;
@@ -27,6 +26,7 @@
   display: flex;
   padding: 0;
   margin: 0;
+  padding: $spacing_2 $spacing_3;
 }
 
 .bs_desktopMenu_item {
