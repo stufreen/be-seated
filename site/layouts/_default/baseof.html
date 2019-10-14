@@ -22,7 +22,7 @@
               <div class="bs_homeRepairsSection_summary bs_homeSection_summary">
                 {{ .Params.summary }}
               </div>
-              <a href="{{ .Permalink }}" class="bs_homeSection_seeMore">See more</a>
+              <a href="{{ .Permalink }}" class="bs_homeSection_seeMore"><span>See more</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="4 8 16 8"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/></svg></a>
             </div>
             <div class="bs_homeSection_imageBlock" style="background-image: url('{{ .Site.Params.cloudinary_url }}/c_fill,g_center,h_1600,q_70,w_1600{{ .Params.home_image }}')"></div>
         </section>
@@ -37,7 +37,7 @@
             <div class="bs_homeSuppliesSection_summary bs_homeSection_summary">
               {{ .Params.summary }}
             </div>
-            <a href="{{ .Permalink }}" class="bs_homeSection_seeMore">See more</a>
+            <a href="{{ .Permalink }}" class="bs_homeSection_seeMore"><span>See more</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="4 8 16 8"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/></svg></a>
           </div>
           <div class="bs_homeSuppliesSection_productsBlock">
             {{ range .Params.home_items }}
@@ -68,7 +68,7 @@
             <time class="bs_homeJournal_featureDate">{{ .Date.Format "January 2, 2006" }}</time>
             <div class="bs_homeJournal_divider"></div>
             <p class="bs_homeJournal_featureSummary">{{ .Params.summary }}</p>
-            <a href="{{ .Permalink }}" class="bs_homeJournal_readMore">Read more</a>
+            <a href="{{ .Permalink }}" class="bs_homeJournal_readMore"><span>Read more</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="4 8 16 8"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/></svg></svg></a>
           </div>
         </article>
       {{ end }}

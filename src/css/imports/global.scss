@@ -75,26 +75,31 @@ a {
   padding: 0.6em 2em;
   font-size: $typography_6;
   font-weight: bold;
-  display: inline-block;
   transition: all 0.4s;
   border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
 
   &:hover, &:active {
     color: white;
     background-color: $accent_color;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0), 0 0.5em 1em rgba(0, 0, 0, 0);
   }
+
+  svg {
+    fill: currentColor;
+    width: 1.2em;
+    margin-left: 1em;
+  }
 }
 
 .dark-button {
+  @extend .shadow-button;
+  box-shadow: none;
   background: $dark_bg_color;
   color: white;
-  padding: 0.6em 2em;
-  font-size: $typography_6;
-  font-weight: bold;
-  display: inline-block;
-  transition: all 0.4s;
-  border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 
   &:hover, &:active {
