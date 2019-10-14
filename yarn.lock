@@ -1003,6 +1003,11 @@ amdefine@>=0.0.4:
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
 
+animol@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/animol/-/animol-1.0.9.tgz#c9f00cc10f5af520a2b830fa44ef121dcfe6ab56"
+  integrity sha512-5lPZAwPqHzUSJamhJgApvHD/hNevY92idK4p5m/IGO7Jcdloq+UD7t6H6oUgrHxjiG0cEz7a24IZcavZjhRA6w==
+
 ansi-colors@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-1.1.0.tgz#6374b4dd5d4718ff3ce27a671a3b1cad077132a9"
