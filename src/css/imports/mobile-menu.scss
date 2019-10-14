@@ -1,8 +1,9 @@
 $mobile_el_size: $typography_2;
 $mobile_header_height: 4.5em;
+$mobile_menu_color: rgba(0, 0, 0, 0.9);
 
 .bs_mobileMenu {
-  background-color: $ink;
+  background-color: $mobile_menu_color;
   height: $mobile_header_height;
   display: flex;
   align-items: center;
@@ -55,7 +56,7 @@ $mobile_header_height: 4.5em;
   bottom: 0;
   right: 0;
   z-index: 11;
-  background-color: $ink;
+  background-color: $mobile_menu_color;
   opacity: 0;
   pointer-events: none;
   transition: all 0.1s ease-in-out;

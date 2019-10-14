@@ -71,7 +71,7 @@
 
 .bs_homeSection_divider {
   width: 4em;
-  height: 0.2em;
+  height: 0.1em;
   background-color: $grey;
   margin-left: $spacing_3;
 }
@@ -82,13 +82,13 @@
 }
 
 .bs_homeSection_textBlock {
-  flex: 6;
+  flex: 5;
   padding-right: $spacing_3;
   line-height: 1.6em;
 }
 
 .bs_homeSection_imageBlock {
-  flex: 5;
+  flex: 6;
   height: 16em;
   width: 100%;
   background-size: cover;
@@ -101,7 +101,7 @@
 }
 
 .bs_homeSuppliesSection_productsBlock {
-  flex: 5;
+  flex: 6;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,7 +114,7 @@
 }
 
 .bs_homeSuppliesSection_productItem {
-  width: 32%;
+  width: calc(33.3% - 0.1em);
   position: relative;
 
   figcaption {
@@ -163,7 +163,7 @@
 
 .bs_homeJournal_featureImageBlock {
   display: block;
-  flex: 4;
+  flex: 6;
   margin-bottom: $spacing_3;
 
   img {
@@ -173,7 +173,7 @@
 }
 
 .bs_homeJournal_featureText {
-  flex: 6;
+  flex: 5;
   padding: 0 $spacing_3;
 }
 
@@ -192,7 +192,7 @@
 
 .bs_homeJournal_divider {
   width: 4em;
-  height: 0.2em;
+  height: 0.1em;
   background-color: white;
 }
 

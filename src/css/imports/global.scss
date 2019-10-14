@@ -1,12 +1,12 @@
 // Spacing
 $spacing_1: 0.5rem;
 $spacing_2: 1rem;
-$spacing_3: 2.5rem;
+$spacing_3: 2.25rem;
 $spacing_4: 4rem;
 $spacing_5: 7rem;
 
 // Typography
-$typography_1: 3.3rem;
+$typography_1: 2.5rem;
 $typography_2: 2.0rem;
 $typography_3: 1.5rem;
 $typography_4: 1.25rem;
@@ -14,7 +14,7 @@ $typography_5: 1rem;
 $typography_6: 0.8rem;
 
 // Colours
-$ink: rgb(31, 34, 36);
+$ink: rgb(60, 64, 75);
 $ink_light: rgb(151, 156, 159);
 $grey: rgb(182, 196, 200);
 $light_grey: rgb(240, 242, 244);
@@ -38,7 +38,7 @@ html {
   background-color: $bright_bg_color;
 
   @media (min-width: $bp_1) {
-    font-size: 1em;
+    font-size: 0.95em;
   }
 
   @media (min-width: $bp_huge) {
