@@ -14,26 +14,26 @@
   </div>
   <nav class="bs_mobileMenu_pageLinks">
     <ul class="bs_mobileMenu_list">
-      <li class="bs_mobileMenu_item">
+      <li class="bs_mobileMenu_item bs_mobileMenu_animatedItem">
         <a class="bs_mobileMenu_link" href="/">
           Home
         </a>
         <div class="bs_mobileMenu_underline"></div>
       </li>
       {{ with .Site.GetPage "/repairs" }}
-        <li class="bs_mobileMenu_item">
+        <li class="bs_mobileMenu_item bs_mobileMenu_animatedItem">
           <a class="bs_mobileMenu_link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
           <div class="bs_mobileMenu_underline"></div>
         </li>
       {{end}}
       {{ with .Site.GetPage "/supplies" }}
-        <li class="bs_mobileMenu_item">
+        <li class="bs_mobileMenu_item bs_mobileMenu_animatedItem">
           <a class="bs_mobileMenu_link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
           <div class="bs_mobileMenu_underline"></div>
         </li>
       {{end}}
       {{ with .Site.GetPage "/journal" }}
-        <li class="bs_mobileMenu_item">
+        <li class="bs_mobileMenu_item bs_mobileMenu_animatedItem">
           <a class="bs_mobileMenu_link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
           <div class="bs_mobileMenu_underline"></div>
         </li>
@@ -41,7 +41,7 @@
     </ul>
   </nav>
 
-  <div class="bs_mobileMenu_drawerFooter">
+  <div class="bs_mobileMenu_drawerFooter bs_mobileMenu_animatedItem">
     {{ with .Site.GetPage "/footer" }}
       <h3 class="bs_mobileMenu_footerTitle">Be Seated</h3>
       <div class="bs_mobileMenu_footerBlock">{{ .Params.content_block_a | safeHTML }}</div>

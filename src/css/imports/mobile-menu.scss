@@ -60,6 +60,7 @@ $mobile_menu_color: rgba(0, 0, 0, 0.9);
   opacity: 0;
   pointer-events: none;
   transition: all 0.1s ease-in-out;
+  perspective: 300px;
 
   &.open {
     opacity: 1;
