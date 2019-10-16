@@ -25,7 +25,7 @@ $mid_bg_color: rgb(193, 199, 204);
 
 // Breakpoints
 $bp_1: 768px;
-$bp_2: 1024px;
+$bp_2: 1024px;y
 $bp_huge: 1500px;
 
 // Fonts
@@ -33,13 +33,9 @@ $body_font: 'Museo Sans', sans-serif;
 $accent_font: 'Museo Sans', sans-serif;
 
 html {
-  font-size: 0.9em;
+  font-size: 1em;
   font-family: $body_font;
   background-color: $bright_bg_color;
-
-  @media (min-width: $bp_1) {
-    font-size: 0.95em;
-  }
 
   @media (min-width: $bp_huge) {
     font-size: 1.1em;
