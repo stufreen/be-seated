@@ -1,6 +1,7 @@
 .bs_hero {
   min-height: 66vh;
   background-size: cover;
+  background-position: center top;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,6 +58,7 @@
 
   @media (min-width: $bp_1) {
     flex-direction: row;
+    padding-left: $spacing_3;
     padding-right: 0;
   }
 }
