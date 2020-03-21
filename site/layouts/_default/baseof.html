@@ -5,7 +5,7 @@
 {{ block "mobile-menu" . }}{{ partial "mobile-menu" . }}{{end}}
 
 <main aria-role="main">
-  <section class="bs_hero" style="background-image: url('{{ .Site.Params.cloudinary_url }}/c_fill,g_center,h_2000,q_50,w_2000{{ .Params.hero_image }}')">
+  <section class="bs_hero" style="background-image: url('{{ .Site.Params.cloudinary_url }}/c_fill,g_center,h_2000,q_50,w_2000,e_brightness_hsb:-10{{ .Params.hero_image }}')">
     <div class="bs_heroContent">
       <div class="bs_heroLogo_wrapper">
         <img class="bs_heroLogo" src="{{ $.Site.Params.cloudinary_url }}/w_1200{{ .Params.logo }}" alt="Be Seated logo" />
